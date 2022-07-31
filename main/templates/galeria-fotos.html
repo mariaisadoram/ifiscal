@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'head' %}
+{% endblock %}
+
+{% block 'title' %}
+    Galeria
+{% endblock %}
+
+{% block 'nav' %}
+<li class="nav-item d-flex align-items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+        class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+            d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+    </svg>
+    <a class="nav-link " aria-current="page" href="{% url 'gCam' %}"
+        style="margin-left: 10px">Câmeras</a>
+</li>
+<li class="nav-item d-flex align-items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-image" viewBox="0 0 16 16">
+        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+        <path
+            d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" />
+    </svg>
+    <a class="nav-link active" href="{% url 'gFotos' %}" style="margin-left: 10px">Galeria</a>
+</li>
+<li class="nav-item d-flex align-items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-graph-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+            d="M0 0h1v15h15v1H0V0Zm14.817 11.887a.5.5 0 0 0 .07-.704l-4.5-5.5a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61 4.15 5.073a.5.5 0 0 0 .704.07Z" />
+    </svg>
+    <a class="nav-link" href="{% url 'estat' %}" style="margin-left: 10px">Estatísticas</a>
+</li>
+{% endblock %}
+
+{% block 'main' %}
+
+<div class="central-div">
+    <div>
+        <h2 style="font-size: 20px; 
+        font-family: Arial, Helvetica, sans-serif;
+        ">
+            Galeria de Imagens
+        </h2>
+    </div>
+    <div class="flex row " style="justify-content: space-between;" >
+
+        <div class="camera-box col-lg-4">
+            <a class="camera-link" href="{% url 'picture' %}">
+
+                <img class="camera-img" src="{% static 'img/galinha_pintadinha.webp' %}" alt="">
+
+                <p class="nome-cam">Imagem 1</p>
+            </a>
+        </div>
+
+        <div class="camera-box col-lg-4">
+            <a class="camera-link" href="{% url 'picture' %}">
+
+                <img class="camera-img" src="{% static 'img/galinha_pintadinha.webp' %}" alt="">
+
+                <p class="nome-cam">Imagem 2</p>
+            </a>
+        </div>
+
+        <div class="camera-box col-lg-4">
+            <a class="camera-link" href="{% url 'picture' %}">
+
+                <img class="camera-img" src="{% static 'img/galinha_pintadinha.webp' %}" alt="">
+
+                <p class="nome-cam">Imagem 3</p>
+            </a>
+        </div>
+
+        <div class="camera-box col-lg-4">
+            <a class="camera-link" href="{% url 'picture' %}">
+
+                <img class="camera-img" src="{% static 'img/galinha_pintadinha.webp' %}" alt="">
+
+                <p class="nome-cam">Imagem 4</p>
+            </a>
+        </div>
+
+        <div class="camera-box col-lg-4">
+            <a class="camera-link" href="{% url 'picture' %}">
+
+                <img class="camera-img" src="{% static 'img/galinha_pintadinha.webp' %}" alt="">
+
+                <p class="nome-cam">Imagem 5</p>
+            </a>
+        </div>
+
+        <div class="camera-box col-lg-4">
+            <a class="camera-link" href="{% url 'picture' %}">
+
+                <img class="camera-img" src="{% static 'img/galinha_pintadinha.webp' %}" alt="">
+
+                <p class="nome-cam">Imagem 6</p>
+            </a>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+{% endblock %}

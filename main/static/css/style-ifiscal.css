@@ -1,0 +1,93 @@
+p, b{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.nav-item {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+}
+
+.flex {
+    display: flex;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.topper-color {
+    height: 50px;
+    top: 0px;
+    background: rgba(139, 197, 60, 0.45);
+}
+
+#img-logo{
+    max-height: 50px;
+}
+
+
+/* tela.html */
+.central-div{
+    margin: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    padding: 40px;
+    padding-top: 30px;
+}
+
+.camera-box{
+    
+    width: 250px;
+    height: 200px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.camera-link{
+    width: 250px;
+    height: 170px;
+    padding-left: 0px;
+    text-decoration: none;
+
+    
+}
+
+.camera-img{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.nome-cam{
+    color: #000;
+}
+
+
+/* tela-camera.html */
+.central-div-cam{
+    margin: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    padding: 40px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-cam-main{
+    height: 530px;
+
+}
+
+.camera-big-box{
+    width: 100%;
+    height: 100%;
+}
+
+.yt-box{
+    width: 100%;
+    height: 100%;
+}
+

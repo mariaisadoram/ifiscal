@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'head' %}
+{% endblock %}
+
+{% block 'title' %}
+Câmera
+{% endblock %}
+
+{% block 'main' %}
+
+<div class="central-div-cam">
+
+    <div class="box-cam-main flex row">
+
+        <div class="camera-big-box">
+            <iframe class="yt-box" width="560" height="315" src="https://www.youtube.com/embed/1i7p0vTGcBk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+
+    </div>
+    <div class="row" style="align-items: center; margin-top: 10px;">
+        <div class="col">
+            <h2 style="font-size: 20px; 
+            font-family: Arial, Helvetica, sans-serif; margin-left: 10px;
+            ">
+                Câmera 1
+            </h2>
+        </div>
+        <div class="col d-flex" style="justify-content: flex-end; margin-right: 10px;">
+            <img src="{% static 'img/Group 4.png' %}" style="width: 50px;" alt="capturar imagem">
+
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock %}
